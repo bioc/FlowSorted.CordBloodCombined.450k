@@ -18,14 +18,8 @@ meta <- data.frame(
     BiocVersion = c("3.9"),
     Genome = rep("hg19", 1), 
     SourceType = rep("tar.gz", 1), 
-    SourceUrl = paste0("https://doi.org/doi:10.18129/",
-                         "B9.bioc.FlowSorted.CordBlood.450k , ",
-                  "https://doi.org/doi:10.18129/",
-                         "B9.bioc.FlowSorted.CordBloodNorway.450k , ",
-        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68456 , ",
-                  "https://karnanilab.com/Tools/",
-                         "FlowSorted.CordTissueAndBlood.EPIC/",
-                         "FlowSorted.CordTissueAndBlood.EPIC_1.0.1.tar.gz"),
+    SourceUrl = paste0("https://bit.ly/2UaTNSi, ", "https://bit.ly/2RQ1nVF, ",
+                       "https://bit.ly/2Wmgt4b, ", "https://bit.ly/2B6zkqH"),
     SourceVersion = "Jan 18 2019",
     Species = "Homo sapiens",
     TaxonomyId = 9606,
@@ -38,8 +32,8 @@ meta <- data.frame(
 RDataPath = c(paste0("FlowSorted.CordBloodCombined.450k/",
 "FlowSorted.CordBloodCombined.450k.rda")),
 Tags = "",
-Notes = paste0("Bakulski et al 2016 data, ", "Gervin et al 2016 data, ",
-          "de Goede et al 2015 data, ", "Lin et al 2018 data")
+Notes = paste0("Bakulski et al 2016, ", "Gervin et al 2016, ",
+          "de Goede et al 2015, ", "Lin et al 2018")
 )
 
 write.csv(meta, file="inst/extdata/metadata.csv", row.names=FALSE)
