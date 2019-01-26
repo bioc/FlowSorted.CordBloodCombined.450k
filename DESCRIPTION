@@ -1,14 +1,12 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina EPIC data on immunomagnetic sorted peripheral adult blood cells
-Version: 0.9.0
+Version: 0.99.0
 Date: 2019-01-18
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
-            person("Kristina", "Gervin", role = c("aut"),
-            email = "kristina.gervin@farmasi.uio.no"),
-            person(c("Meaghan", "C."), "Jones", role = c("aut"),
-            email = "meaghan.jones@umanitoba.ca"),
+            person("Kristina", "Gervin", role = c("aut")),
+            person(c("Meaghan", "C."), "Jones", role = c("aut")),
             person(c("Kelly", "M."), "Bakulski", role = c("ctb")),
             person(c("Devin", "C."), "Koestler", role = c("ctb")),
             person(c("John", "K."), "Wiencke", role = c("ctb")),
@@ -21,14 +19,14 @@ Description: Raw data objects to be used for umbilical cord blood cell
         The FlowSorted.CordBloodCombined.450k object is based in samples assayed
         by Bakulski et al, Gervin et al., de Goede et al., and Lin et al.
 License: GPL-3
-Depends: R (>= 3.5), minfi (>= 1.21.2), SummarizedExperiment, 
+Depends: R (>= 3.6), minfi (>= 1.21.2), SummarizedExperiment, 
          IlluminaHumanMethylation450kanno.ilmn12.hg19(>= 0.2.1),
-         IlluminaHumanMethylationEPICanno.ilm10b4.hg19, ExperimentHub,
+         IlluminaHumanMethylationEPICanno.ilm10b4.hg19, ExperimentHub(>= 1.9.1),
          FlowSorted.Blood.EPIC
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, Genome,
         TissueMicroarrayData, MethylationArrayData, ExperimentHub
 NeedsCompilation: no
-LazyData: yes
+LazyData: no
 Packaged: 2019-01-18 16:43:10 UTC; biocbuild
 Suggests: knitr,
     rmarkdown, 

@@ -25,15 +25,15 @@ This object is a vector of length 517 consisting of the names of the IDOL
 # Step 1: Load the reference library to extract the umbilical cord samples
 # library(ExperimentHub)
 # hub <- ExperimentHub()
-# query(hub, "FlowSorted.CordBloodCombined.450K")
-# FlowSorted.CordBloodCombined.450K <- hub[["EH1136"]]#Correct the number
-# FlowSorted.CordBloodCombined.450K
+# myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
+# FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
+# FlowSorted.CordBloodCombined.450k
 
 # Step 2 separate the reference from the testing dataset if you want to run 
 # examples for estimations for this function example
 
-# RGsetTargets <- FlowSorted.CordBloodCombined.450K[,
-# FlowSorted.CordBloodCombined.450K$CellType == "WBC"]
+# RGsetTargets <- FlowSorted.CordBloodCombined.450k[,
+# FlowSorted.CordBloodCombined.450k$CellType == "WBC"]
 # sampleNames(RGsetTargets) <- paste(RGsetTargets$CellType,
 #                               seq_len(dim(RGsetTargets)[2]), sep = "_")
 # RGsetTargets
@@ -56,7 +56,8 @@ This object is a vector of length 517 consisting of the names of the IDOL
 # To use the IDOL optimized list of CpGs (IDOLOptimizedCpGsCordBlood) use 
 # estimateCellCounts2 from FlowSorted.Blood.EPIC. 
 # Do not run with limited RAM the normalization step requires a big amount 
-# of memory resources. Use the parameters as specified below.
+# of memory resources. Use the parameters as specified below. for 
+# reproducibility use the parameters below.
 # 
 # if (memory.limit()>8000){
 #     countsEPIC<-estimateCellCounts2(RGsetTargets, 
@@ -68,7 +69,7 @@ This object is a vector of length 517 consisting of the names of the IDOL
 #                                     referencePlatform = 
 #                                         "IlluminaHumanMethylationEPIC",
 #                                     referenceset = 
-#                                      "FlowSorted.CordBloodCombined.450K",
+#                                      "FlowSorted.CordBloodCombined.450k",
 #                                     IDOLOptimizedCpGs =
 #                                       IDOLOptimizedCpGsCordBlood, 
 #                                     returnAll = FALSE)

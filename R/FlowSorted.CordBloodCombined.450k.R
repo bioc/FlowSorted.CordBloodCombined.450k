@@ -2,10 +2,10 @@
 #' @description
 #' The FlowSorted.CordBloodCombined.450k package contains data derived from 
 #' Illumina HumanMethylation450K and Illumina HumanMethylationEPIC DNA 
-#' methylation microarrays (Gervin K, Salas LA et al. 2018), consisting of 263 
-#' blood cell references and 26 umbilical cord blood samples, formatted as an 
-#' RGChannelSet object for integration and normalization using most of the 
-#' existing Bioconductor packages.
+#' methylation microarrays (Gervin K, Salas LA et al. under review), consisting
+#' of 263 blood cell references and 26 umbilical cord blood samples, formatted 
+#' as an RGChannelSet object for integration and normalization using most of  
+#' the existing Bioconductor packages.
 #' 
 #' This package contains cleaned data from four different umbilical cord blood 
 #' references similar to the FlowSorted.CordBlood.450K package consisting of 
@@ -17,21 +17,27 @@
 #' consists of appropriate data for deconvolution of umbilical cord blood 
 #' samples used in for example EWAS relying in both 450K and EPIC technology.
 #' 
-#' Researchers may find this package useful as these samples represent different 
-#' cellular populations ( T lymphocytes (CD4+ and CD8+), B cells (CD19+), 
-#' monocytes (CD14+), NK cells (CD56+) and Granulocytes of cell sorted umbilical
-#'  cord blood. The estimates were contrasted versus FACS proportions in 22 
-#'  samples, and validated using 197 umbilical cord blood samples. These data 
-#'  can be integrated with the minfi Bioconductor package to estimate cellular 
-#'  composition in users' umbilical cord blood Illumina 450K and EPIC samples 
-#'  using a modified version of the algorithm constrained projection/quadratic 
-#'  programming described in Houseman et al. 2012. However, for more accurate 
-#'  estimations we suggests that the user prefers IDOL over minfi automatic 
-#'  estimations, using the function estimateCellCounts2 from the package 
-#'  FlowSorted.Blood.EPIC which allows using customized sets of probes from 
-#'  IDOL.
+#' Researchers may find this package useful as these samples represent  
+#' different cellular populations ( T lymphocytes (CD4+ and CD8+), B cells  
+#' (CD19+), monocytes (CD14+), NK cells (CD56+) and Granulocytes of cell sorted 
+#' cord blood. The estimates were contrasted versus FACS proportions in 22 
+#' umbilical samples, and validated using 197 umbilical cord blood samples.  
+#' These data can be integrated with the minfi Bioconductor package to   
+#' estimate cellular composition in users' umbilical cord blood Illumina 450K  
+#' and EPIC samples using a modified version of the algorithm constrained  
+#' projection/quadratic programming described in Houseman et al. 2012. However, 
+#' for more accurate estimations we suggests that the user prefers IDOL over  
+#' minfi automatic estimations, using the function estimateCellCounts2 from   
+#' the package FlowSorted.Blood.EPIC which allows using customized sets of   
+#' probes from IDOL.
 #'
-#'
+#' @import minfi
+#' @import SummarizedExperiment
+#' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
+#' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
+#' @import ExperimentHub
+#' @import FlowSorted.Blood.EPIC
+#' 
 #' @format A class: RGChannelSet, dimensions: 575130 289 
 #' 
 #' @seealso
@@ -66,10 +72,11 @@
 #' 
 #' @examples
 #' # Explore the reference library
-#' #library(ExperimentHub)
-#' #hub <- ExperimentHub()
-#' #myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
-#' #FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
-#' #FlowSorted.CordBloodCombined.450k
+#' library(ExperimentHub)
+#' hub <- ExperimentHub()
+#' myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
+#' FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
+#' FlowSorted.CordBloodCombined.450k
 #' 
+#' @return RGChannelSet 289 samples
 "FlowSorted.CordBloodCombined.450k"

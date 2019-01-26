@@ -59,7 +59,8 @@
 #' # To use the IDOL optimized list of CpGs (IDOLOptimizedCpGsCordBlood) use 
 #' # estimateCellCounts2 from FlowSorted.Blood.EPIC. 
 #' # Do not run with limited RAM the normalization step requires a big amount 
-#' # of memory resources. Use the parameters as specified below.
+#' # of memory resources. Use the parameters as specified below. for 
+#' # reproducibility use the parameters below.
 #' # 
 #' # if (memory.limit()>8000){
 #' #     countsEPIC<-estimateCellCounts2(RGsetTargets, 
