@@ -31,7 +31,8 @@
 #' the package FlowSorted.Blood.EPIC which allows using customized sets of   
 #' probes from IDOL.
 #'
-#' @import minfi
+#' @rawNamespace import(minfi, except = rowsum)
+#' @importFrom DelayedArray rowsum
 #' @import SummarizedExperiment
 #' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
@@ -40,7 +41,7 @@
 #' @importFrom utils data
 #' @importFrom utils read.csv
 #' @importFrom utils memory.limit
-#' @importFrom DelayedArray rowsum
+
 #' 
 #' @format A class: RGChannelSet, dimensions: 575130 289 
 #' 
