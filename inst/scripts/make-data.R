@@ -124,5 +124,8 @@ FlowSorted.CordBloodCombined.450k@colData[] <- lapply(
 save(FlowSorted.CordBloodCombined.450k, 
      file="data/FlowSorted.CordBloodCombined.450k.rda", version = 3,
      compress = TRUE)
+library(tools)
+resaveRdaFiles("data/FlowSorted.CordBloodCombined.450k.rda", compress = "auto",
+               version = 3)
 
 

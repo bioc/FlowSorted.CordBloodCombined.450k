@@ -31,8 +31,9 @@
 #' the package FlowSorted.Blood.EPIC which allows using customized sets of   
 #' probes from IDOL.
 #'
-#' @rawNamespace import(minfi, except = rowsum)
-#' @importFrom DelayedArray rowsum
+#' @rawNamespace import(DelayedMatrixStats, except = rowsum)
+#' @import DelayedArray
+#' @import minfi
 #' @import SummarizedExperiment
 #' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
