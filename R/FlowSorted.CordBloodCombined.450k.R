@@ -75,12 +75,13 @@
 #' 
 #' @examples
 #' # Explore the reference library
+#' if (memory.limit()>8000){
 #' library(ExperimentHub)
 #' hub <- ExperimentHub()
 #' myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
 #' FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
 #' FlowSorted.CordBloodCombined.450k
-#' 
+#' }
 #' @return RGChannelSet 289 samples
 #' @usage 
 #' FlowSorted.CordBloodCombined.450k 
