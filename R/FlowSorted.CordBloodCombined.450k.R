@@ -37,6 +37,10 @@
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
 #' @import ExperimentHub
 #' @import FlowSorted.Blood.EPIC
+#' @importFrom utils data
+#' @importFrom utils read.csv
+#' @importFrom utils memory.limit
+#' @importFrom DelayedArray rowsum
 #' 
 #' @format A class: RGChannelSet, dimensions: 575130 289 
 #' 
@@ -47,14 +51,14 @@
 #' doi:10.1080/15592294.2016.1161875.
 #' \item  K Gervin, et al. (2016) \emph{Cell type specific DNA methylation in
 #' cord blood: A 450K-reference data set and cell count-based validation of 
-#' estimated cell type composition}. Epigenetics 11:690–8. 
+#' estimated cell type composition}. Epigenetics 11:690-8. 
 #' doi:10.1080/15592294.2016.1214782. 
 #' \item  OM de Goede, et al. (2015) \emph{Nucleated red blood cells impact DNA 
 #' methylation and expression analyses of cord blood hematopoietic cells}. 
 #' Clin Epigenetics. 7:95. doi:10.1186/s13148-015-0129-6.
 #' \item  X Lin, et al. (2018) \emph{Cell type-specific DNA methylation in 
 #' neonatal cord tissue and cord blood: A 850K-reference panel and comparison 
-#' of cell-types}. Epigenetics. 13:941–58. doi:10.1080/15592294.2018.1522929.
+#' of cell-types}. Epigenetics. 13:941-58. doi:10.1080/15592294.2018.1522929.
 #' \item LA Salas et al. (2018). \emph{An optimized library for 
 #' reference-based deconvolution of whole-blood biospecimens assayed using the 
 #' Illumina HumanMethylationEPIC BeadArray}. Genome Biology 19, 64. doi:
@@ -67,7 +71,6 @@
 #' doi:10.1186/1471-2105-13-86.
 #' \item \pkg{minfi} package for tools for estimating cell type
 #' composition in blood using these data
-
 #' }
 #' 
 #' @examples
@@ -79,4 +82,6 @@
 #' FlowSorted.CordBloodCombined.450k
 #' 
 #' @return RGChannelSet 289 samples
+#' @usage 
+#' FlowSorted.CordBloodCombined.450k 
 "FlowSorted.CordBloodCombined.450k"

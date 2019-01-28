@@ -51,6 +51,7 @@ customized sets of probes from IDOL.
 the reference library
 
 ```{r eval=FALSE}
+if (memory.limit()>8000){
 library(ExperimentHub)  
 
 hub <- ExperimentHub()  
@@ -59,7 +60,8 @@ myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
 
 FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
 
-FlowSorted.CordBloodCombined.450k  
+FlowSorted.CordBloodCombined.450k
+}
 ```
 The raw dataset is hosted in Bioconductor ExperimentHub   
 

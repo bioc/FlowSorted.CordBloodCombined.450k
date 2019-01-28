@@ -3,6 +3,7 @@ test_that("errors if bad parameters", {
     library(FlowSorted.CordBloodCombined.450k)
     library(FlowSorted.Blood.EPIC)
     library(ExperimentHub)
+    if (memory.limit()>8000){
     hub <- ExperimentHub()
     myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
     FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
@@ -26,6 +27,7 @@ test_that("errors if bad parameters", {
                                             IDOLOptimizedCpGs =
                                                     IDOLOptimizedCpGsCordBlood, 
                                                     returnAll = FALSE)))
+    }
     
 })
 

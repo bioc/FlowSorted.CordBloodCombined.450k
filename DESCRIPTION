@@ -1,7 +1,7 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina EPIC data on immunomagnetic sorted peripheral adult blood cells
-Version: 0.99.0
+Version: 0.99.1
 Date: 2019-01-18
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
@@ -22,7 +22,7 @@ License: GPL-3
 Depends: R (>= 3.6), minfi (>= 1.21.2), SummarizedExperiment, 
          IlluminaHumanMethylation450kanno.ilmn12.hg19(>= 0.2.1),
          IlluminaHumanMethylationEPICanno.ilm10b4.hg19, ExperimentHub(>= 1.9.1),
-         FlowSorted.Blood.EPIC
+         FlowSorted.Blood.EPIC, utils, DelayedArray
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, Genome,
         TissueMicroarrayData, MethylationArrayData, ExperimentHub
 NeedsCompilation: no
