@@ -31,7 +31,7 @@
 #' the package FlowSorted.Blood.EPIC which allows using customized sets of   
 #' probes from IDOL.
 #'
-#' @rawNamespace import(DelayedMatrixStats, except = rowsum)
+#' @rawNamespace import(DelayedMatrixStats, except = c(colsum, rowsum))
 #' @import DelayedArray
 #' @import minfi
 #' @import SummarizedExperiment
@@ -77,13 +77,13 @@
 #' 
 #' @examples
 #' # Explore the reference library
-#' if (memory.limit()>8000){
-#' library(ExperimentHub)
-#' hub <- ExperimentHub()
-#' myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
-#' FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
-#' FlowSorted.CordBloodCombined.450k
-#' }
+#' # if (memory.limit()>8000){
+#' # library(ExperimentHub)
+#' # hub <- ExperimentHub()
+#' # myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
+#' # FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
+#' # FlowSorted.CordBloodCombined.450k
+#' # }
 #' @return RGChannelSet 289 samples
 #' @usage 
 #' FlowSorted.CordBloodCombined.450k 
