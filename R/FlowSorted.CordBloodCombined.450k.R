@@ -33,7 +33,7 @@
 #'
 #' @rawNamespace import(DelayedMatrixStats, except = c(colsum, rowsum))
 #' @import DelayedArray
-#' @import minfi
+#' @rawNamespace import(minfi, except = c(colsum, rowsum))
 #' @import SummarizedExperiment
 #' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
