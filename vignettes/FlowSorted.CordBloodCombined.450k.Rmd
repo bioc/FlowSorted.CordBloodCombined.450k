@@ -71,7 +71,12 @@ head(IDOLOptimizedCpGsCordBlood)
 ```  
 
 
-**References**  
+**References**
+
+K Gervin, LA Salas et al. (2019) Systematic evaluation and validation of 
+references and library selection methods for deconvolution of cord blood DNA 
+methylation data. (Under review)
+
 KM Bakulski, et al. (2016) DNA methylation of cord blood cell types: 
 Applications for mixed cell birth studies. Epigenetics 11:5. doi: 
 [10.1080/15592294.2016.1161875]
