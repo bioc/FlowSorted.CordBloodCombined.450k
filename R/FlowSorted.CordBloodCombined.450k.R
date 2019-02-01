@@ -19,9 +19,11 @@
 #' 
 #' Researchers may find this package useful as these samples represent  
 #' different cellular populations ( T lymphocytes (CD4+ and CD8+), B cells  
-#' (CD19+), monocytes (CD14+), NK cells (CD56+) and Granulocytes of cell sorted 
-#' cord blood. The estimates were contrasted versus FACS proportions in 22 
-#' umbilical samples, and validated using 197 umbilical cord blood samples.  
+#' (CD19+), monocytes (CD14+), NK cells (CD56+), Granulocytes, and nucleated 
+#' red blood cells of cell sorted umbilicalcord blood. The estimates were 
+#' contrasted versus FACS proportions in 22 umbilical samples, and validated 
+#' using 197 umbilical cord blood samples.  
+#' 
 #' These data can be integrated with the minfi Bioconductor package to   
 #' estimate cellular composition in users' umbilical cord blood Illumina 450K  
 #' and EPIC samples using a modified version of the algorithm constrained  
@@ -29,11 +31,9 @@
 #' for more accurate estimations we suggests that the user prefers IDOL over  
 #' minfi automatic estimations, using the function estimateCellCounts2 from   
 #' the package FlowSorted.Blood.EPIC which allows using customized sets of   
-#' probes from IDOL.
+#' probes from IDOL (see IDOLOptimizedCpGsCordBlood for an example).
 #'
-#' @rawNamespace import(DelayedMatrixStats, except = c(colsum, rowsum))
-#' @import DelayedArray
-#' @rawNamespace import(minfi, except = c(colsum, rowsum))
+#' @import minfi
 #' @import SummarizedExperiment
 #' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
@@ -48,6 +48,9 @@
 #' 
 #' @seealso
 #' References \enumerate{
+#' \item  K Gervin, LA Salas et al. (2019) \emph{Systematic evaluation and 
+#' validation of references and library selection methods for deconvolution of 
+#' cord blood DNA methylation data}. (Under review)
 #' \item  KM Bakulski, et al. (2016) \emph{DNA methylation of cord blood 
 #' cell types: Applications for mixed cell birth studies}. Epigenetics 11:5. 
 #' doi:10.1080/15592294.2016.1161875.
@@ -76,14 +79,14 @@
 #' }
 #' 
 #' @examples
-#' # Explore the reference library
-#' # if (memory.limit()>8000){
-#' # library(ExperimentHub)
-#' # hub <- ExperimentHub()
-#' # myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
+#' library(ExperimentHub)
+#' hub <- ExperimentHub()
+#' myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
+#' myfiles$ah_id=="EH2256"#ExperimenHub ID
+#' # Do not run unless you have enough memory resources 
 #' # FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
 #' # FlowSorted.CordBloodCombined.450k
-#' # }
+#' 
 #' @return RGChannelSet 289 samples
 #' @usage 
 #' FlowSorted.CordBloodCombined.450k 

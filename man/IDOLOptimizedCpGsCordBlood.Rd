@@ -56,8 +56,8 @@ This object is a vector of length 517 consisting of the names of the IDOL
 # To use the IDOL optimized list of CpGs (IDOLOptimizedCpGsCordBlood) use 
 # estimateCellCounts2 from FlowSorted.Blood.EPIC. 
 # Do not run with limited RAM the normalization step requires a big amount 
-# of memory resources. Use the parameters as specified below. for 
-# reproducibility use the parameters below.
+# of memory resources. Use the parameters as specified below for 
+# reproducibility.
 # 
 # if (memory.limit()>8000){
 #     countsEPIC<-estimateCellCounts2(RGsetTargets, 
@@ -78,6 +78,10 @@ This object is a vector of length 517 consisting of the names of the IDOL
 # }
 }
 \references{
+K Gervin, LA Salas et al. (2019) \emph{Systematic evaluation and 
+validation of references and library selection methods for deconvolution of 
+cord blood DNA methylation data}. (Under review).
+
 LA Salas et al. (2018). \emph{An optimized library for 
 reference-based deconvolution of whole-blood biospecimens assayed using the 
 Illumina HumanMethylationEPIC BeadArray}. Genome Biology 19, 64. doi:
