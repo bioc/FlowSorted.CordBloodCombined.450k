@@ -1,4 +1,5 @@
 # FlowSorted.CordBloodCombined.450k
+[![DOI](https://zenodo.org/badge/167406689.svg)](https://zenodo.org/badge/latestdoi/167406689)
 This package includes a combination of four cell references for umbilical cord 
 blood deconvolution using IlluminaHumanMethylation arrays 450K and EPIC 
 
