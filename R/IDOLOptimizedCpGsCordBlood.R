@@ -15,7 +15,8 @@
 #' 
 #' @references K Gervin, LA Salas et al. (2019) \emph{Systematic evaluation and 
 #' validation of references and library selection methods for deconvolution of 
-#' cord blood DNA methylation data}. (Under review).
+#' cord blood DNA methylation data}. Clin Epigenetics 11,125. doi:
+#' 10.1186/s13148-019-0717-y
 #' @references LA Salas et al. (2018). \emph{An optimized library for 
 #' reference-based deconvolution of whole-blood biospecimens assayed using the 
 #' Illumina HumanMethylationEPIC BeadArray}. Genome Biology 19, 64. doi:
@@ -66,20 +67,21 @@
 #' # reproducibility.
 #' # 
 #' # if (memory.limit()>8000){
-#' #     countsEPIC<-estimateCellCounts2(RGsetTargets, 
-#' #                                     compositeCellType = "Blood", 
+#' #     countsUCB<-estimateCellCounts2(RGsetTargets, 
+#' #                                     compositeCellType = 
+#' #                                                "CordBloodCombined", 
 #' #                                     processMethod = "preprocessNoob",
 #' #                                     probeSelect = "IDOL", 
 #' #                                     cellTypes = c("CD8T", "CD4T", "NK",  
 #' #                                     "Bcell", "Mono", "Gran", "nRBC"), 
 #' #                                     referencePlatform = 
-#' #                                         "IlluminaHumanMethylationEPIC",
+#' #                                         "IlluminaHumanMethylation450k",
 #' #                                     referenceset = 
 #' #                                      "FlowSorted.CordBloodCombined.450k",
 #' #                                     IDOLOptimizedCpGs =
 #' #                                       IDOLOptimizedCpGsCordBlood, 
 #' #                                     returnAll = FALSE)
 #' #     
-#' #     head(countsEPIC$counts)
+#' #     head(countsUCB$counts)
 #' # }
 "IDOLOptimizedCpGsCordBlood"
