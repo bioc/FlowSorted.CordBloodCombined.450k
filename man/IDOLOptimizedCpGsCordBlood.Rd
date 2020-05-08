@@ -5,10 +5,12 @@
 \alias{IDOLOptimizedCpGsCordBlood}
 \title{IDOL Optimized CpGs for umbilical cord blood DNA methylation 
     deconvolution}
-\format{An object of class "character" of length 517.
+\format{
+An object of class "character" of length 517.
 
         The format is:
-        chr [1:517] "cg12603453" "cg24765783" "cg06975018" "cg19708055" ...}
+        chr [1:517] "cg12603453" "cg24765783" "cg06975018" "cg19708055" ...
+}
 \usage{
 IDOLOptimizedCpGsCordBlood
 }

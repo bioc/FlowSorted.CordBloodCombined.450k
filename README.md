@@ -39,6 +39,10 @@ customized sets of probes from IDOL.
 
 References: 
 
+K Gervin, LA Salas et al. (2019) Systematic evaluation and validation of 
+references and library selection methods for deconvolution of cord blood DNA 
+methylation data}. Clin Epigenetics 11,125. doi: 10.1186/s13148-019-0717-y
+
 KM Bakulski, et al. (2016) DNA methylation of cord blood 
 cell types: Applications for mixed cell birth studies. Epigenetics 11:5. 
 doi:10.1080/15592294.2016.1161875.
