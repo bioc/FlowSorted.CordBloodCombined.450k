@@ -4,9 +4,11 @@
 \name{FlowSorted.CordBloodCombined.450k.compTable}
 \alias{FlowSorted.CordBloodCombined.450k.compTable}
 \title{FlowSorted.CordBloodCombined.450k.compTable}
-\format{A class: matrix, dimensions: 517 7
+\format{
+A class: matrix, dimensions: 517 7
         The format is:
-        num [1:517, 1:7] 0.0568 0.214 0.908 0.839 ...}
+        num [1:517, 1:7] 0.0568 0.214 0.908 0.839 ...
+}
 \usage{
 FlowSorted.CordBloodCombined.450k.compTable
 }
@@ -34,7 +36,8 @@ validated using 197 umbilical cord blood samples.
 References \enumerate{
 \item  K Gervin, LA Salas et al. (2019) \emph{Systematic evaluation and 
 validation of references and library selection methods for deconvolution of 
-cord blood DNA methylation data}. (Under review)
+cord blood DNA methylation data}. Clin Epigenetics 11,125. doi:
+10.1186/s13148-019-0717-y
 \item  KM Bakulski, et al. (2016) \emph{DNA methylation of cord blood 
 cell types: Applications for mixed cell birth studies}. Epigenetics 11:5. 
 doi:10.1080/15592294.2016.1161875.

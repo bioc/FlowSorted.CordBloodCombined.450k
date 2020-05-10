@@ -15,7 +15,7 @@
 #' cell type composition obtained through FlowSorted.CordBlood.450k package were
 #' less precise and biased compared to actual cell counts. Hence, this package 
 #' consists of appropriate data for deconvolution of umbilical cord blood 
-#' samples used in for example EWAS relying in both 450K and EPIC technology.
+#' samples used in for example EWAS relying in both 450k and EPIC technology.
 #' 
 #' Researchers may find this package useful as these samples represent  
 #' different cellular populations ( T lymphocytes (CD4+ and CD8+), B cells  
