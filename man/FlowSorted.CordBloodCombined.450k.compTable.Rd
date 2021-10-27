@@ -10,7 +10,8 @@ A class: matrix, dimensions: 517 7
         num [1:517, 1:7] 0.0568 0.214 0.908 0.839 ...
 }
 \usage{
-FlowSorted.CordBloodCombined.450k.compTable
+head(FlowSorted.CordBloodCombined.450k.compTable)
+#See ?estimateCellCounts2 for usage
 }
 \value{
 numeric matrix 517 rows 7 columns

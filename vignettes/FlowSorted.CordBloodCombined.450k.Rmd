@@ -50,15 +50,10 @@ customized sets of probes from IDOL.
 1. *FlowSorted.CordBloodCombined.450k* is the RGChannelSet object containing 
 the reference library
 
-```{r eval=FALSE}
+```{r eval=TRUE}
 if (memory.limit()>8000){
-library(ExperimentHub)  
 
-hub <- ExperimentHub()  
-
-myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
-
-FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
+FlowSorted.CordBloodCombined.450k <- FlowSorted.CordBloodCombined.450k()
 
 FlowSorted.CordBloodCombined.450k
 }
@@ -66,7 +61,8 @@ FlowSorted.CordBloodCombined.450k
 The raw dataset is hosted in Bioconductor ExperimentHub   
 
 2. *IDOLOptimizedCpGsCordBlood* the IDOL L-DMR library for deconvolution  
-```{r eval=FALSE}
+```{r eval=TRUE}
+data("IDOLOptimizedCpGsCordBlood") 
 head(IDOLOptimizedCpGsCordBlood)  
 ```  
 

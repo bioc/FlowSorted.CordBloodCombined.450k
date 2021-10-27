@@ -55,5 +55,6 @@
 #' 
 #' @return numeric matrix 517 rows 7 columns
 #' @usage 
-#' FlowSorted.CordBloodCombined.450k.compTable 
+#' head(FlowSorted.CordBloodCombined.450k.compTable)
+#' #See ?estimateCellCounts2 for usage
 "FlowSorted.CordBloodCombined.450k.compTable"

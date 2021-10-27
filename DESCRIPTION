@@ -1,7 +1,7 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
-Version: 1.11.0
+Version: 1.11.1
 Date: 2019-10-24
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
@@ -33,6 +33,6 @@ Suggests: knitr,
     testthat, IlluminaHumanMethylation450kmanifest(>= 0.2.0), 
     IlluminaHumanMethylationEPICanno.ilm10b2.hg19
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2
 URL: https://github.com/immunomethylomics/FlowSorted.CordBloodCombined.450k
 BugReports: https://github.com/immunomethylomics/FlowSorted.CordBloodCombined.450k/issues.

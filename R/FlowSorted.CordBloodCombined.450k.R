@@ -80,15 +80,12 @@
 #' }
 #' 
 #' @examples
-#' library(ExperimentHub)
-#' hub <- ExperimentHub()
-#' myfiles <- query(hub, "FlowSorted.CordBloodCombined.450k")
-#' myfiles$ah_id=="EH2256"#ExperimenHub ID
-#' # Do not run unless you have enough memory resources 
-#' # FlowSorted.CordBloodCombined.450k <- myfiles[[1]]
-#' # FlowSorted.CordBloodCombined.450k
-#' 
+#' FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' FlowSorted.CordBloodCombined.450k
 #' @return RGChannelSet 289 samples
 #' @usage 
-#' FlowSorted.CordBloodCombined.450k 
+#' FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' FlowSorted.CordBloodCombined.450k
+#' table(FlowSorted.CordBloodCombined.450k$CellType)
+#' #See ?estimateCellCounts2 for cell deconvolution guidelines
 "FlowSorted.CordBloodCombined.450k"
