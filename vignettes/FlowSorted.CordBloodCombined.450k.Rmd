@@ -53,8 +53,11 @@ the reference library
 ```{r eval=TRUE}
 if (memory.limit()>8000){
 
-FlowSorted.CordBloodCombined.450k <- FlowSorted.CordBloodCombined.450k()
-
+#FlowSorted.CordBloodCombined.450k <- FlowSorted.CordBloodCombined.450k()
+library(ExperimentHub)
+assign("FlowSorted.CordBloodCombined.450k",
+        ExperimentHub()[[query(ExperimentHub(),
+        "FlowSorted.CordBloodCombined.450k")$ah_id]])
 FlowSorted.CordBloodCombined.450k
 }
 ```

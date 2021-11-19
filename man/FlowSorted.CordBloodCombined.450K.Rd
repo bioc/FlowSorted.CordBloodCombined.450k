@@ -8,8 +8,13 @@
 A class: RGChannelSet, dimensions: 575130 289
 }
 \usage{
-FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+library(ExperimentHub)
+assign("FlowSorted.CordBloodCombined.450k",
+        ExperimentHub()[[query(ExperimentHub(),
+        "FlowSorted.CordBloodCombined.450k")$ah_id]])
 FlowSorted.CordBloodCombined.450k
+
 table(FlowSorted.CordBloodCombined.450k$CellType)
 #See ?estimateCellCounts2 for cell deconvolution guidelines
 }
@@ -51,7 +56,11 @@ the package FlowSorted.Blood.EPIC which allows using customized sets of
 probes from IDOL (see IDOLOptimizedCpGsCordBlood for an example).
 }
 \examples{
-FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+library(ExperimentHub)
+assign("FlowSorted.CordBloodCombined.450k",
+        ExperimentHub()[[query(ExperimentHub(),
+        "FlowSorted.CordBloodCombined.450k")$ah_id]])
 FlowSorted.CordBloodCombined.450k
 }
 \seealso{

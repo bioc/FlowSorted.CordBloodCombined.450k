@@ -80,12 +80,21 @@
 #' }
 #' 
 #' @examples
-#' FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' #FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' library(ExperimentHub)
+#' assign("FlowSorted.CordBloodCombined.450k",
+#'         ExperimentHub()[[query(ExperimentHub(),
+#'         "FlowSorted.CordBloodCombined.450k")$ah_id]])
 #' FlowSorted.CordBloodCombined.450k
 #' @return RGChannelSet 289 samples
 #' @usage 
-#' FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' #FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
+#' library(ExperimentHub)
+#' assign("FlowSorted.CordBloodCombined.450k",
+#'         ExperimentHub()[[query(ExperimentHub(),
+#'         "FlowSorted.CordBloodCombined.450k")$ah_id]])
 #' FlowSorted.CordBloodCombined.450k
+#' 
 #' table(FlowSorted.CordBloodCombined.450k$CellType)
 #' #See ?estimateCellCounts2 for cell deconvolution guidelines
 "FlowSorted.CordBloodCombined.450k"
