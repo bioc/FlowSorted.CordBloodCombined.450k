@@ -22,7 +22,7 @@ License: GPL-3
 Depends: R (>= 3.6), minfi (>= 1.21.2), SummarizedExperiment, 
          IlluminaHumanMethylation450kanno.ilmn12.hg19(>= 0.2.1),
          IlluminaHumanMethylationEPICanno.ilm10b4.hg19, ExperimentHub(>= 1.9.1),
-         FlowSorted.Blood.EPIC, utils
+         FlowSorted.Blood.EPIC, utils, AnnotationHub
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, Genome,
         TissueMicroarrayData, MethylationArrayData, ExperimentHub
 NeedsCompilation: no

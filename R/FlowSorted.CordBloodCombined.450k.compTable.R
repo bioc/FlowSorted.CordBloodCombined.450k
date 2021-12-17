@@ -1,4 +1,5 @@
 #' FlowSorted.CordBloodCombined.450k.compTable
+#' 
 #' @description
 #' The FlowSorted.CordBloodCombined.450k.compTable contains the average DNA 
 #' methylation values used for IDOL deconvolution (Gervin K, Salas LA et al. 
@@ -52,9 +53,12 @@
 #' 
 #' @examples
 #' # Explore the reference library
-#' 
+#' #data("FlowSorted.CordBloodCombined.450k.compTable")
+#' #head(FlowSorted.CordBloodCombined.450k.compTable)
 #' @return numeric matrix 517 rows 7 columns
 #' @usage 
-#' head(FlowSorted.CordBloodCombined.450k.compTable)
-#' #See ?estimateCellCounts2 for usage
+#' 
+#' #data("FlowSorted.CordBloodCombined.450k.compTable")
+#' #head(FlowSorted.CordBloodCombined.450k.compTable)
+#' #See ?estimateCellCounts2 for deconvolution
 "FlowSorted.CordBloodCombined.450k.compTable"

@@ -1,5 +1,5 @@
-.onLoad <- function(libname = 
-                        find.package("FlowSorted.CordBloodCombined.450k"), 
+.onLoad <- function(libname =
+                        find.package("FlowSorted.CordBloodCombined.450k"),
                     pkgname = "FlowSorted.CordBloodCombined.450k") {
     #assign(pkgname, ExperimentHub()[[query(ExperimentHub(), pkgname)$ah_id]])
     fl <- system.file("extdata", "metadata.csv", package=pkgname)

@@ -10,8 +10,9 @@ A class: matrix, dimensions: 517 7
         num [1:517, 1:7] 0.0568 0.214 0.908 0.839 ...
 }
 \usage{
-head(FlowSorted.CordBloodCombined.450k.compTable)
-#See ?estimateCellCounts2 for usage
+#data("FlowSorted.CordBloodCombined.450k.compTable")
+#head(FlowSorted.CordBloodCombined.450k.compTable)
+#See ?estimateCellCounts2 for deconvolution
 }
 \value{
 numeric matrix 517 rows 7 columns
@@ -31,7 +32,8 @@ validated using 197 umbilical cord blood samples.
 }
 \examples{
 # Explore the reference library
-
+#data("FlowSorted.CordBloodCombined.450k.compTable")
+#head(FlowSorted.CordBloodCombined.450k.compTable)
 }
 \seealso{
 References \enumerate{

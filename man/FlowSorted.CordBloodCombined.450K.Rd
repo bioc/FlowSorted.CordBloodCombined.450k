@@ -8,14 +8,7 @@
 A class: RGChannelSet, dimensions: 575130 289
 }
 \usage{
-#FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
-library(ExperimentHub)
-assign("FlowSorted.CordBloodCombined.450k",
-        ExperimentHub()[[query(ExperimentHub(),
-        "FlowSorted.CordBloodCombined.450k")$ah_id]])
 FlowSorted.CordBloodCombined.450k
-
-table(FlowSorted.CordBloodCombined.450k$CellType)
 #See ?estimateCellCounts2 for cell deconvolution guidelines
 }
 \value{
@@ -42,7 +35,7 @@ samples used in for example EWAS relying in both 450K and EPIC technology.
 Researchers may find this package useful as these samples represent  
 different cellular populations ( T lymphocytes (CD4+ and CD8+), B cells  
 (CD19+), monocytes (CD14+), NK cells (CD56+), Granulocytes, and nucleated 
-red blood cells of cell sorted umbilicalcord blood. The estimates were 
+red blood cells of cell sorted umbilical cord blood. The estimates were 
 contrasted versus FACS proportions in 22 umbilical samples, and validated 
 using 197 umbilical cord blood samples.  
 
@@ -56,12 +49,11 @@ the package FlowSorted.Blood.EPIC which allows using customized sets of
 probes from IDOL (see IDOLOptimizedCpGsCordBlood for an example).
 }
 \examples{
-#FlowSorted.CordBloodCombined.450k<-FlowSorted.CordBloodCombined.450k()
-library(ExperimentHub)
-assign("FlowSorted.CordBloodCombined.450k",
-        ExperimentHub()[[query(ExperimentHub(),
-        "FlowSorted.CordBloodCombined.450k")$ah_id]])
 FlowSorted.CordBloodCombined.450k
+#FlowSorted.CordBloodCombined.450k<-
+#libraryDataGet('FlowSorted.CordBloodCombined.450k')
+#FlowSorted.CordBloodCombined.450k
+#table(FlowSorted.CordBloodCombined.450k$CellType)
 }
 \seealso{
 References \enumerate{

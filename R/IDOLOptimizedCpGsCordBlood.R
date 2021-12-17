@@ -26,5 +26,12 @@
 #' BMC bioinformatics. 17, 120. doi: 10.1186/s12859-016-0943-7.
 #' 
 #' @examples
-#' # data ("IDOLOptimizedCpGsCordBlood")
+#' #data ("IDOLOptimizedCpGsCordBlood")
+#' #head(IDOLOptimizedCpGsCordBlood)
+#' #See ?estimateCellCounts2 for deconvolution examples
+#' @usage 
+#' 
+#' #data ("IDOLOptimizedCpGsCordBlood")
+#' #head(IDOLOptimizedCpGsCordBlood)
+#' #See ?estimateCellCounts2 for deconvolution examples
 "IDOLOptimizedCpGsCordBlood"

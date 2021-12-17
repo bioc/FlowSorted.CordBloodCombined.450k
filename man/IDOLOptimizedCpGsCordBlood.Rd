@@ -12,7 +12,9 @@ An object of class "character" of length 517.
         chr [1:517] "cg12603453" "cg24765783" "cg06975018" "cg19708055" ...
 }
 \usage{
-IDOLOptimizedCpGsCordBlood
+#data ("IDOLOptimizedCpGsCordBlood")
+#head(IDOLOptimizedCpGsCordBlood)
+#See ?estimateCellCounts2 for deconvolution examples
 }
 \description{
 This object is a vector of length 517 consisting of the names of the IDOL
@@ -21,7 +23,9 @@ This object is a vector of length 517 consisting of the names of the IDOL
     six normal leukocyte subtypes and the nucleated red blood cells.
 }
 \examples{
-# data ("IDOLOptimizedCpGsCordBlood")
+#data ("IDOLOptimizedCpGsCordBlood")
+#head(IDOLOptimizedCpGsCordBlood)
+#See ?estimateCellCounts2 for deconvolution examples
 }
 \references{
 K Gervin, LA Salas et al. (2019) \emph{Systematic evaluation and 
