@@ -12,7 +12,7 @@ libraryDataGet(title)
 \value{
 The function will look for the dataset in ExperimentHub and load the object
 
-This function will return an object matching the title of the ExperimenHub
+This function will return an object matching the title of the ExperimentHub
 }
 \description{
 Function to load the library data from ExperimentHub

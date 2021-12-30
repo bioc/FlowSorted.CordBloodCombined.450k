@@ -12,7 +12,7 @@
 #' libraryDataGet('FlowSorted.CordBloodCombined.450k')
 #' FlowSorted.CordBloodCombined.450k
 #' @return
-#' This function will return an object matching the title of the ExperimenHub
+#' This function will return an object matching the title of the ExperimentHub
 #' @export 
 libraryDataGet <- function(title) {
     assign(title,ExperimentHub()[[query(ExperimentHub(),
