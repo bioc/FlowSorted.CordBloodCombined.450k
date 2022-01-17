@@ -2,7 +2,6 @@
 
 export(libraryDataGet)
 import(ExperimentHub)
-import(FlowSorted.Blood.EPIC)
 import(IlluminaHumanMethylation450kanno.ilmn12.hg19)
 import(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
 import(SummarizedExperiment)

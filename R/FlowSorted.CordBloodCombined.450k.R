@@ -38,7 +38,6 @@
 #' @import IlluminaHumanMethylation450kanno.ilmn12.hg19
 #' @import IlluminaHumanMethylationEPICanno.ilm10b4.hg19
 #' @import ExperimentHub
-#' @import FlowSorted.Blood.EPIC
 #' @importFrom utils data
 #' @importFrom utils read.csv
 #' @importFrom utils memory.limit

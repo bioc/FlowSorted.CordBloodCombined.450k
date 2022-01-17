@@ -2,7 +2,6 @@
 #' @description 
 #' Function to load the library data from ExperimentHub
 #' @import ExperimentHub
-#' @import FlowSorted.Blood.EPIC
 #' @importFrom AnnotationHub query
 #' @param 
 #' title        title of the data, e.g., 'FlowSorted.CordBloodCombined.450k'

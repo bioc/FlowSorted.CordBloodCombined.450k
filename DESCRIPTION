@@ -1,7 +1,7 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
-Version: 1.11.4
+Version: 1.11.5
 Date: 2019-10-24
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
@@ -22,7 +22,7 @@ License: GPL-3
 Depends: R (>= 3.6), minfi (>= 1.21.2), ExperimentHub(>= 1.9.1)
 Imports: SummarizedExperiment, 
          IlluminaHumanMethylation450kanno.ilmn12.hg19(>= 0.2.1),
-         IlluminaHumanMethylationEPICanno.ilm10b4.hg19, FlowSorted.Blood.EPIC, 
+         IlluminaHumanMethylationEPICanno.ilm10b4.hg19,  
          utils, AnnotationHub
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, Genome,
         TissueMicroarrayData, MethylationArrayData, ExperimentHub
@@ -30,9 +30,8 @@ NeedsCompilation: no
 LazyData: yes
 LazyDataCompression: gzip
 Packaged: 2019-01-18 16:43:10 UTC; biocbuild
-Suggests: knitr,
-    rmarkdown, 
-    testthat, IlluminaHumanMethylation450kmanifest(>= 0.2.0), 
+Suggests: FlowSorted.Blood.EPIC, knitr, rmarkdown, testthat, 
+    IlluminaHumanMethylation450kmanifest(>= 0.2.0), 
     IlluminaHumanMethylationEPICanno.ilm10b2.hg19
 VignetteBuilder: knitr
 RoxygenNote: 7.1.2
