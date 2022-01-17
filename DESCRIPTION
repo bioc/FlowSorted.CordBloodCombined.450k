@@ -1,7 +1,7 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
-Version: 1.11.3
+Version: 1.11.4
 Date: 2019-10-24
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
@@ -19,14 +19,16 @@ Description: Raw data objects to be used for umbilical cord blood cell
         The FlowSorted.CordBloodCombined.450k object is based in samples assayed
         by Bakulski et al, Gervin et al., de Goede et al., and Lin et al.
 License: GPL-3
-Depends: R (>= 3.6), minfi (>= 1.21.2), SummarizedExperiment, 
+Depends: R (>= 3.6), minfi (>= 1.21.2), ExperimentHub(>= 1.9.1)
+Imports: SummarizedExperiment, 
          IlluminaHumanMethylation450kanno.ilmn12.hg19(>= 0.2.1),
-         IlluminaHumanMethylationEPICanno.ilm10b4.hg19, ExperimentHub(>= 1.9.1),
-         FlowSorted.Blood.EPIC, utils, AnnotationHub
+         IlluminaHumanMethylationEPICanno.ilm10b4.hg19, FlowSorted.Blood.EPIC, 
+         utils, AnnotationHub
 biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, Genome,
         TissueMicroarrayData, MethylationArrayData, ExperimentHub
 NeedsCompilation: no
-LazyData: no
+LazyData: yes
+LazyDataCompression: gzip
 Packaged: 2019-01-18 16:43:10 UTC; biocbuild
 Suggests: knitr,
     rmarkdown, 
