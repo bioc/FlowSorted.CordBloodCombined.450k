@@ -1,7 +1,7 @@
 Package: FlowSorted.CordBloodCombined.450k
 Type: Package
 Title: Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
-Version: 1.13.0
+Version: 1.14.0
 Date: 2019-10-24
 Authors@R: c( person(c("Lucas", "A."), "Salas", role = c("cre", "aut"),
             email = "lucas.a.salas.diaz@dartmouth.edu"),
